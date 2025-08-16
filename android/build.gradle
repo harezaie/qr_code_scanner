@@ -2,7 +2,6 @@ group 'net.touchcapture.qr.flutterqr'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    namespace "com.example.qr_code_scanner"
     ext.kotlin_version = '1.9.0'
     repositories {
         google()
@@ -26,6 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace "com.example.qr_code_scanner"
     compileSdk 33
 
     sourceSets {
